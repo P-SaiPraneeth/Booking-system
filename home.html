@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unisex Hair Saloon and Spa</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-image: url(https://imgs.search.brave.com/63Q81YxL67uk_dyWwpqrC7ZeUlPlqWlKnv0DlvzsKzs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzQ0LzYwLzE2/LzM2MF9GXzE0NDYw/MTY4NF9vSkN2QTFF/OFZQckg3RmJVMmkx/Z3REUU85RGc1ZGF3/SS5qcGc);
+        }
+
+        nav {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            font-size: 23px;
+        }
+
+        nav a {
+            color: peru;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+
+        section {
+            padding: 10px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-image: url(https://imgs.search.brave.com/4NVa8YKGY9K-1jIIZ20nxe8yeRIh2L2SKzRQJmptIf4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzE4LzMzLzcw/LzM2MF9GXzIxODMz/NzAxN19RUHJWSHY1/ZFR0b1I4a0kxazhT/WmQwZ1FUM01qa1Fk/MC5qcGc);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: burlywood;
+        }
+
+        .service1,
+        .service2,
+        .service3 {
+            color:#fff;
+            flex: 1;
+            margin: 10px;
+            background-color: darkslategray;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; 
+        }
+
+        .service-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service-image {
+            height: 400px; 
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+
+        .service1 .service-image {
+            background-image: url('https://imgs.search.brave.com/pfHCdRZSE2tPRE3WKIGKiwDBwZgAXgyYX7O_ju_tJ6g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA0/MDk5NzkyOC9waG90/by9zdHlsaW5nLWhh/aXItYnktcHJvZmVz/c2lvbmFsLWhhaXJk/cmVzc2VyLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz11dndo/QXd0UVNtLUtpZ1lQ/bkxwaFJJYjZMSlBu/WXVVcWFWN2hkQTVM/ODVZPQ');
+        }
+
+        .service2 .service-image {
+            background-image: url('https://imgs.search.brave.com/S3rtDZ-S8jzjGiibCTT1Lyq8tV2-PY7HgDxAnIu5WQM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzEyLzU5LzE5/LzM2MF9GXzIxMjU5/MTkzNV9yYzFlY2RC/N2NIYkNwNmFVMzY0/ZVNsV2d1d2J3eHIz/Zi5qcGc');
+        }
+
+        .service3 .service-image {
+            background-image: url('https://imgs.search.brave.com/gQ-RO-JhwlkwiKx8B1_YpUFCuch52zUStfSD_uCE1ww/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA4/OTUzNTQxOC9waG90/by9oYWlyLWNvbG9y/cy1wYWxldHRlLWFz/LWJhY2tncm91bmQt/ZHllZC1zYW1wbGVz/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1JYk13WTd0dUpH/RFVXRVNNb3VnQW01/SndBVEhGZmlYeGZU/M3NqSzd4M2dVPQ');
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Unisex Hair Saloon and Spa</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="location.html">Location</a>
+        <a href="booking.html">Booking system</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign up</a>
+
+    </nav>
+
+    <section>
+        <div class="container">
+            <h2>Welcome to Unisex Hair Saloon and Spa</h2>
+            <p></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service1">
+                    <div class="service-content">
+                        <h3>Haircut</h3>
+                        <p>Get a fresh Haircut from our best of the best hair stylists.</p>
+                        <a href="hairstyles.html">Explore Hairstyles</a>
+                    </div>
+                    <div class="service-image"></div>
+                </div>
+                <div class="service2">
+                    <div class="service-content">
+                        <h3>Massage</h3>
+                        <p>Have a full body massage and have time of your life.</p>
+                        <a href="massage.html">Explore Massages</a>
+                    </div>
+                    <div class="service-image"></div>
+                </div>
+                <div class="service3">
+                    <div class="service-content">
+                        <h3>Hair Color</h3>
+                        <p>Get your hair dyed in any color you want.</p>
+                        <a href="haircolor.html">Explore Hair Colors</a>
+                    </div>
+                    <div class="service-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Unisex Hair Saloon and Spa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
